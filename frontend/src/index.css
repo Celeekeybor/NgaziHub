@@ -6,15 +6,15 @@
   --color-sun: #F5B400;
   --color-charcoal: #111827;
   --color-ice: #F8FAFC;
+  --color-tint-blue: #E3ECFD;
+  --color-tint-sun: #FFF3CC;
 
   --font-display: "Bricolage Grotesque", system-ui, sans-serif;
   --font-sans: "Public Sans", system-ui, sans-serif;
+  --font-kids: "Fredoka", "Bricolage Grotesque", system-ui, sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 5rem;
-}
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
 
 body {
   background-color: #F8FAFC;
@@ -23,25 +23,20 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-family: "Bricolage Grotesque", system-ui, sans-serif;
   letter-spacing: -0.02em;
 }
+.font-kids, .font-kids h1, .font-kids h2, .font-kids h3 {
+  font-family: "Fredoka", "Bricolage Grotesque", system-ui, sans-serif;
+  letter-spacing: 0;
 
-
-:focus-visible {
-  outline: 3px solid #2563EB;
-  outline-offset: 3px;
 }
 
-.on-dark :focus-visible {
-  outline-color: #F5B400;
-}
+:focus-visible { outline: 3px solid #2563EB; outline-offset: 3px; }
+.on-dark :focus-visible { outline-color: #F5B400; }
 
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-}
+summary { cursor: pointer; }
+summary::-webkit-details-marker { display: none; }
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

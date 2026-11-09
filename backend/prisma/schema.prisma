@@ -1,0 +1,142 @@
+generator client { provider = "prisma-client-js" }
+datasource db { provider = "postgresql" url = env("DATABASE_URL") }
+
+enum Role { STUDENT STAFF ADMIN SUPER_ADMIN }
+enum CourseStatus { DRAFT PUBLISHED ARCHIVED }
+enum PaymentMode { FREE FULL INSTALLMENTS BOTH }
+enum EnrollmentStatus { PENDING_PAYMENT ACTIVE SUSPENDED COMPLETED CANCELLED }
+enum PaymentStatus { INITIATED PENDING VERIFIED FAILED REFUNDED }
+enum InquiryStatus { NEW IN_PROGRESS RESPONDED CLOSED }
+
+model User {
+ id String @id @default(cuid())
+ email String @unique
+ name String
+ passwordHash String
+ role Role @default(STUDENT)
+ active Boolean @default(true)
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+ sessions Session[]
+ enrollments Enrollment[]
+ inquiries Inquiry[]
+ auditLogs AuditLog[]
+}
+model Session {
+ id String @id @default(cuid())
+ tokenHash String @unique
+ userId String
+ user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+ expiresAt DateTime
+ createdAt DateTime @default(now())
+ revokedAt DateTime?
+ @@index([userId])
+}
+model Course {
+ id String @id @default(cuid())
+ code String @unique
+ title String
+ description String @default("")
+ department String @default("")
+ status CourseStatus @default(DRAFT)
+ feeMinor Int @default(0)
+ currency String @default("KES")
+ paymentMode PaymentMode @default(FULL)
+ depositPercent Int @default(50)
+ installmentCount Int @default(2)
+ accessAfterDeposit Boolean @default(false)
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+ lessons Lesson[]
+ enrollments Enrollment[]
+ @@index([status])
+}
+model Lesson {
+ id String @id @default(cuid())
+ courseId String
+ course Course @relation(fields:[courseId], references:[id],onDelete:Cascade)
+ title String
+ body String @default("")
+ position Int
+ published Boolean @default(false)
+ progresses LessonProgress[]
+ @@unique([courseId,position])
+}
+model Enrollment {
+ id String @id @default(cuid())
+ userId String
+ courseId String
+ user User @relation(fields:[userId],references:[id],onDelete:Cascade)
+ course Course @relation(fields:[courseId],references:[id])
+ status EnrollmentStatus @default(PENDING_PAYMENT)
+ selectedPlan PaymentMode
+ totalMinor Int
+ currency String
+ accessGrantedAt DateTime?
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+ installments Installment[]
+ payments Payment[]
+ progresses LessonProgress[]
+ @@unique([userId,courseId])
+ @@index([courseId,status])
+}
+model Installment {
+ id String @id @default(cuid())
+ enrollmentId String
+ enrollment Enrollment @relation(fields:[enrollmentId],references:[id],onDelete:Cascade)
+ sequence Int
+ amountMinor Int
+ dueAt DateTime?
+ @@unique([enrollmentId,sequence])
+}
+model Payment {
+ id String @id @default(cuid())
+ enrollmentId String
+ enrollment Enrollment @relation(fields:[enrollmentId],references:[id],onDelete:Cascade)
+ amountMinor Int
+ currency String
+ provider String
+ providerReference String? @unique
+ status PaymentStatus @default(INITIATED)
+ verifiedAt DateTime?
+ createdAt DateTime @default(now())
+ @@index([enrollmentId,status])
+}
+model LessonProgress {
+ id String @id @default(cuid())
+ enrollmentId String
+ lessonId String
+ enrollment Enrollment @relation(fields:[enrollmentId],references:[id],onDelete:Cascade)
+ lesson Lesson @relation(fields:[lessonId],references:[id],onDelete:Cascade)
+ completedAt DateTime @default(now())
+ @@unique([enrollmentId,lessonId])
+}
+model Inquiry {
+ id String @id @default(cuid())
+ userId String?
+ user User? @relation(fields:[userId],references:[id],onDelete:SetNull)
+ name String
+ email String
+ phone String?
+ category String
+ message String
+ status InquiryStatus @default(NEW)
+ createdAt DateTime @default(now())
+}
+model SiteContent {
+ key String @id
+ value Json
+ updatedAt DateTime @updatedAt
+}
+model AuditLog {
+ id String @id @default(cuid())
+ actorId String
+ actor User @relation(fields:[actorId],references:[id])
+ action String
+ entity String
+ entityId String
+ details Json?
+ createdAt DateTime @default(now())
+ @@index([entity,entityId])
+}

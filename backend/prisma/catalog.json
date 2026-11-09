@@ -1,0 +1,464 @@
+[
+  {
+    "code": "CMP 101",
+    "title": "Introduction to Computers",
+    "dept": "cmp",
+    "deptName": "Computer Packages & Digital Literacy",
+    "mode": "Online / Physical"
+  },
+  {
+    "code": "CMP 102",
+    "title": "Computer Packages — Complete",
+    "dept": "cmp",
+    "deptName": "Computer Packages & Digital Literacy",
+    "mode": "Online / Physical"
+  },
+  {
+    "code": "CMP 103",
+    "title": "Microsoft Word",
+    "dept": "cmp",
+    "deptName": "Computer Packages & Digital Literacy",
+    "mode": "Online / Physical"
+  },
+  {
+    "code": "CMP 104",
+    "title": "Microsoft Excel",
+    "dept": "cmp",
+    "deptName": "Computer Packages & Digital Literacy",
+    "mode": "Online / Physical"
+  },
+  {
+    "code": "CMP 105",
+    "title": "Microsoft PowerPoint",
+    "dept": "cmp",
+    "deptName": "Computer Packages & Digital Literacy",
+    "mode": "Online / Physical"
+  },
+  {
+    "code": "CMP 106",
+    "title": "Microsoft Access",
+    "dept": "cmp",
+    "deptName": "Computer Packages & Digital Literacy",
+    "mode": "Online / Physical"
+  },
+  {
+    "code": "CMP 107",
+    "title": "Microsoft Publisher",
+    "dept": "cmp",
+    "deptName": "Computer Packages & Digital Literacy",
+    "mode": "Online / Physical"
+  },
+  {
+    "code": "CMP 108",
+    "title": "Internet and Email Skills",
+    "dept": "cmp",
+    "deptName": "Computer Packages & Digital Literacy",
+    "mode": "Online / Physical"
+  },
+  {
+    "code": "CMP 109",
+    "title": "Typing and Keyboard Skills",
+    "dept": "cmp",
+    "deptName": "Computer Packages & Digital Literacy",
+    "mode": "Online / Physical"
+  },
+  {
+    "code": "CMP 110",
+    "title": "Digital Literacy and Online Safety",
+    "dept": "cmp",
+    "deptName": "Computer Packages & Digital Literacy",
+    "mode": "Online / Physical"
+  },
+  {
+    "code": "CMP 111",
+    "title": "Google Workspace Essentials",
+    "dept": "cmp",
+    "deptName": "Computer Packages & Digital Literacy",
+    "mode": "Online / Physical"
+  },
+  {
+    "code": "CMP 112",
+    "title": "Advanced Microsoft Excel",
+    "dept": "cmp",
+    "deptName": "Computer Packages & Digital Literacy",
+    "mode": "Online / Physical"
+  },
+  {
+    "code": "PRG 101",
+    "title": "Introduction to Programming",
+    "dept": "prg",
+    "deptName": "Programming & Software Development",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "PRG 102",
+    "title": "Programming Logic and Algorithms",
+    "dept": "prg",
+    "deptName": "Programming & Software Development",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "PRG 103",
+    "title": "Python Programming for Beginners",
+    "dept": "prg",
+    "deptName": "Programming & Software Development",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "PRG 104",
+    "title": "Introduction to C Programming",
+    "dept": "prg",
+    "deptName": "Programming & Software Development",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "PRG 105",
+    "title": "C++ Programming Fundamentals",
+    "dept": "prg",
+    "deptName": "Programming & Software Development",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "PRG 106",
+    "title": "Java Programming Fundamentals",
+    "dept": "prg",
+    "deptName": "Programming & Software Development",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "PRG 107",
+    "title": "HTML and CSS",
+    "dept": "prg",
+    "deptName": "Programming & Software Development",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "PRG 108",
+    "title": "JavaScript Fundamentals",
+    "dept": "prg",
+    "deptName": "Programming & Software Development",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "PRG 109",
+    "title": "Introduction to Databases and SQL",
+    "dept": "prg",
+    "deptName": "Programming & Software Development",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "PRG 110",
+    "title": "Introduction to Web Development",
+    "dept": "prg",
+    "deptName": "Programming & Software Development",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "PRG 111",
+    "title": "Object-Oriented Programming",
+    "dept": "prg",
+    "deptName": "Programming & Software Development",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "PRG 112",
+    "title": "Git and GitHub Basics",
+    "dept": "prg",
+    "deptName": "Programming & Software Development",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "NET 101",
+    "title": "Introduction to Computer Networking",
+    "dept": "net",
+    "deptName": "Computer Networking",
+    "mode": "Hybrid / Physical"
+  },
+  {
+    "code": "NET 102",
+    "title": "Networking Fundamentals",
+    "dept": "net",
+    "deptName": "Computer Networking",
+    "mode": "Hybrid / Physical"
+  },
+  {
+    "code": "NET 103",
+    "title": "LAN and WAN Technologies",
+    "dept": "net",
+    "deptName": "Computer Networking",
+    "mode": "Hybrid / Physical"
+  },
+  {
+    "code": "NET 104",
+    "title": "IP Addressing and Subnetting",
+    "dept": "net",
+    "deptName": "Computer Networking",
+    "mode": "Hybrid / Physical"
+  },
+  {
+    "code": "NET 105",
+    "title": "Network Cabling and Installation",
+    "dept": "net",
+    "deptName": "Computer Networking",
+    "mode": "Hybrid / Physical"
+  },
+  {
+    "code": "NET 106",
+    "title": "Router and Switch Configuration",
+    "dept": "net",
+    "deptName": "Computer Networking",
+    "mode": "Hybrid / Physical"
+  },
+  {
+    "code": "NET 107",
+    "title": "Wireless Network Setup",
+    "dept": "net",
+    "deptName": "Computer Networking",
+    "mode": "Hybrid / Physical"
+  },
+  {
+    "code": "NET 108",
+    "title": "Network Troubleshooting",
+    "dept": "net",
+    "deptName": "Computer Networking",
+    "mode": "Hybrid / Physical"
+  },
+  {
+    "code": "NET 109",
+    "title": "Introduction to Cisco Networking",
+    "dept": "net",
+    "deptName": "Computer Networking",
+    "mode": "Hybrid / Physical"
+  },
+  {
+    "code": "NET 110",
+    "title": "Introduction to MikroTik",
+    "dept": "net",
+    "deptName": "Computer Networking",
+    "mode": "Hybrid / Physical"
+  },
+  {
+    "code": "NET 111",
+    "title": "Network Security Fundamentals",
+    "dept": "net",
+    "deptName": "Computer Networking",
+    "mode": "Hybrid / Physical"
+  },
+  {
+    "code": "NET 112",
+    "title": "Introduction to Server Administration",
+    "dept": "net",
+    "deptName": "Computer Networking",
+    "mode": "Hybrid / Physical"
+  },
+  {
+    "code": "HWT 101",
+    "title": "Introduction to Computer Hardware",
+    "dept": "hwt",
+    "deptName": "Hardware, Maintenance & IT Support",
+    "mode": "Physical / Hybrid"
+  },
+  {
+    "code": "HWT 102",
+    "title": "Computer Assembly and Disassembly",
+    "dept": "hwt",
+    "deptName": "Hardware, Maintenance & IT Support",
+    "mode": "Physical / Hybrid"
+  },
+  {
+    "code": "HWT 103",
+    "title": "Computer Repair and Maintenance",
+    "dept": "hwt",
+    "deptName": "Hardware, Maintenance & IT Support",
+    "mode": "Physical / Hybrid"
+  },
+  {
+    "code": "HWT 104",
+    "title": "Operating System Installation",
+    "dept": "hwt",
+    "deptName": "Hardware, Maintenance & IT Support",
+    "mode": "Physical / Hybrid"
+  },
+  {
+    "code": "HWT 105",
+    "title": "Windows Installation and Configuration",
+    "dept": "hwt",
+    "deptName": "Hardware, Maintenance & IT Support",
+    "mode": "Physical / Hybrid"
+  },
+  {
+    "code": "HWT 106",
+    "title": "Software Installation and Troubleshooting",
+    "dept": "hwt",
+    "deptName": "Hardware, Maintenance & IT Support",
+    "mode": "Physical / Hybrid"
+  },
+  {
+    "code": "HWT 107",
+    "title": "Laptop Maintenance and Repair",
+    "dept": "hwt",
+    "deptName": "Hardware, Maintenance & IT Support",
+    "mode": "Physical / Hybrid"
+  },
+  {
+    "code": "HWT 108",
+    "title": "Printer Installation and Maintenance",
+    "dept": "hwt",
+    "deptName": "Hardware, Maintenance & IT Support",
+    "mode": "Physical / Hybrid"
+  },
+  {
+    "code": "HWT 109",
+    "title": "Introduction to IT Support",
+    "dept": "hwt",
+    "deptName": "Hardware, Maintenance & IT Support",
+    "mode": "Physical / Hybrid"
+  },
+  {
+    "code": "HWT 110",
+    "title": "Computer Troubleshooting and Diagnostics",
+    "dept": "hwt",
+    "deptName": "Hardware, Maintenance & IT Support",
+    "mode": "Physical / Hybrid"
+  },
+  {
+    "code": "SEC 101",
+    "title": "Introduction to Cybersecurity",
+    "dept": "sec",
+    "deptName": "Cybersecurity & Operating Systems",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "SEC 102",
+    "title": "Computer and Internet Security",
+    "dept": "sec",
+    "deptName": "Cybersecurity & Operating Systems",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "SEC 103",
+    "title": "Windows Operating System Fundamentals",
+    "dept": "sec",
+    "deptName": "Cybersecurity & Operating Systems",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "SEC 104",
+    "title": "Introduction to Linux",
+    "dept": "sec",
+    "deptName": "Cybersecurity & Operating Systems",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "SEC 105",
+    "title": "Linux Command Line Basics",
+    "dept": "sec",
+    "deptName": "Cybersecurity & Operating Systems",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "SEC 106",
+    "title": "User Accounts and Access Management",
+    "dept": "sec",
+    "deptName": "Cybersecurity & Operating Systems",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "SEC 107",
+    "title": "Network Security Basics",
+    "dept": "sec",
+    "deptName": "Cybersecurity & Operating Systems",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "SEC 108",
+    "title": "Data Backup and Recovery",
+    "dept": "sec",
+    "deptName": "Cybersecurity & Operating Systems",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "SEC 109",
+    "title": "Introduction to Cloud Computing",
+    "dept": "sec",
+    "deptName": "Cybersecurity & Operating Systems",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "SEC 110",
+    "title": "Ethical Hacking Fundamentals (Authorized Labs)",
+    "dept": "sec",
+    "deptName": "Cybersecurity & Operating Systems",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "WEB 101",
+    "title": "Introduction to Website Design",
+    "dept": "web",
+    "deptName": "Web Development & Databases",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "WEB 102",
+    "title": "HTML and CSS for Beginners",
+    "dept": "web",
+    "deptName": "Web Development & Databases",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "WEB 103",
+    "title": "WordPress Website Development",
+    "dept": "web",
+    "deptName": "Web Development & Databases",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "WEB 104",
+    "title": "Responsive Web Design",
+    "dept": "web",
+    "deptName": "Web Development & Databases",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "WEB 105",
+    "title": "Introduction to JavaScript",
+    "dept": "web",
+    "deptName": "Web Development & Databases",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "WEB 106",
+    "title": "Website Hosting and Domain Management",
+    "dept": "web",
+    "deptName": "Web Development & Databases",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "WEB 107",
+    "title": "Introduction to Database Management",
+    "dept": "web",
+    "deptName": "Web Development & Databases",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "WEB 108",
+    "title": "MySQL Database Fundamentals",
+    "dept": "web",
+    "deptName": "Web Development & Databases",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "WEB 109",
+    "title": "PHP and MySQL Basics",
+    "dept": "web",
+    "deptName": "Web Development & Databases",
+    "mode": "Online / Hybrid"
+  },
+  {
+    "code": "WEB 110",
+    "title": "Building a Complete Website",
+    "dept": "web",
+    "deptName": "Web Development & Databases",
+    "mode": "Online / Hybrid"
+  }
+]
